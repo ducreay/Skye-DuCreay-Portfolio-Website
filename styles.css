@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Remove padding and margins by default */
 body {
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@ body {
     color: #FFFFFF;
 } */
 
+/* Set up the hero section */
 .hero-section {
     /*Set the background*/
     width: 100%;
@@ -37,11 +39,13 @@ body {
     padding: 40px;
 }
 
+/* Be absolutely sure that the margins and padding gets removed from the top of the website */
 h1, h2 {
     margin: 0;
     padding: 0;
 }
 
+/* Center and right-justify the main name */
 #Main-Name {
     /*Set the main name*/
     text-align: right;
@@ -53,6 +57,7 @@ h1, h2 {
     -webkit-text-stroke: 1px black;
 }
 
+/* Set up basic formatting for About Me */
 .site-contents {
     display: flex;
     flex-direction: column;
@@ -65,6 +70,7 @@ h1, h2 {
     background-color: #bebebe;
 }
 
+/* Format About Me header specifically */
 .site-contents h2 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', serif;
@@ -72,6 +78,7 @@ h1, h2 {
     color: #202020;
 }
 
+/* Format the About Me paragraph */
 .site-contents p {
     max-width: 800px;
     margin: 0;
@@ -82,6 +89,7 @@ h1, h2 {
     color: #202020;
 }
 
+/* Set up the spacing and placement of the code and movement columns */
 .skills-section {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -91,6 +99,7 @@ h1, h2 {
     background-color: #d5e0e4;
 }
 
+/* Place a rounded box to contain the two columns (plus some other formatting) */
 .code-column,
 .movement-column {
     padding: 24px;
@@ -100,6 +109,7 @@ h1, h2 {
     box-shadow: 0 4px 12px rgba(32, 32, 32, 0.12);
 }
 
+/* Column headers */
 .code-column h2,
 .movement-column h2 {
     margin-bottom: 16px;
@@ -109,6 +119,7 @@ h1, h2 {
     color: #202020;
 }
 
+/* Column lists */
 .code-column ul,
 .movement-column ul {
     max-width: 320px;
@@ -120,6 +131,7 @@ h1, h2 {
     color: #202020;
 }
 
+/* Footer formatting */
 footer {
     padding: 24px;
     text-align: center;
@@ -127,11 +139,11 @@ footer {
     color: #FFFFFF;
     font-family: Georgia, 'Times New Roman', serif;
 }
-
 footer p {
     margin: 0;
 }
 
+/* Set spacing for the columns */
 @media (max-width: 700px) {
     .skills-section {
         grid-template-columns: 1fr;
